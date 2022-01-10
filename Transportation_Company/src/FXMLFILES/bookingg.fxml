@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="colorBackground" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller = "Controller.Controller4">
+   <content>
+      <AnchorPane prefHeight="805.0" prefWidth="583.0" styleClass="colorBackground" stylesheets="@stylesheet.css">
+         <children>
+            <Label layoutX="73.0" layoutY="25.0" prefHeight="40.0" prefWidth="433.0" text="Where are we going from? ">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="200.0" prefHeight="24.0" prefWidth="110.0" text="Select your region" />
+            <RadioButton fx:id="curraddress" layoutX="63.0" layoutY="105.0" mnemonicParsing="false" text="Use your address as current location">
+               <toggleGroup>
+                  <ToggleGroup fx:id="goingfrom" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="curr" layoutX="63.0" layoutY="140.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="257.0" text="Specify your current location" toggleGroup="$goingfrom" />
+            <Label layoutX="63.0" layoutY="245.0" prefHeight="24.0" prefWidth="97.0" text="Select your city" textAlignment="CENTER" wrapText="true" />
+            <Label layoutX="63.0" layoutY="290.0" prefHeight="36.0" prefWidth="134.0" text="Provide any additional information" wrapText="true" />
+            <TextArea fx:id="gfinfo" layoutX="270.0" layoutY="290.0" prefHeight="16.0" prefWidth="200.0" />
+            <Label layoutX="81.0" layoutY="360.0" prefHeight="40.0" prefWidth="433.0" text="Where are we going to? " textAlignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="destaddress" layoutX="63.0" layoutY="440.0" mnemonicParsing="false" text="Use your address as your destination">
+               <toggleGroup>
+                  <ToggleGroup fx:id="goingto" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="dest" layoutX="63.0" layoutY="475.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="257.0" text="Specify your destination" toggleGroup="$goingto" />
+            <Label layoutX="64.0" layoutY="535.0" prefHeight="24.0" prefWidth="177.0" text="Select the destination region" />
+            <Label layoutX="63.0" layoutY="580.0" prefHeight="24.0" prefWidth="174.0" text="Select the destination city" textAlignment="CENTER" wrapText="true" />
+            <TextArea fx:id="destinfo" layoutX="270.0" layoutY="625.0" prefHeight="32.0" prefWidth="200.0" />
+            <ChoiceBox fx:id="currregion" layoutX="270.0" layoutY="199.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="currcity" layoutX="270.0" layoutY="245.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="destregion" layoutX="270.0" layoutY="535.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="destcity" layoutX="270.0" layoutY="580.0" prefWidth="150.0" />
+            <Label layoutX="63.0" layoutY="680.0" prefHeight="24.0" prefWidth="125.0" text="Select preferred vehicle" textAlignment="CENTER" wrapText="true" />
+            <ChoiceBox fx:id="vehicle" layoutX="270.0" layoutY="680.0" prefWidth="150.0" />
+            <Label layoutX="64.0" layoutY="625.0" prefHeight="36.0" prefWidth="134.0" text="Provide any additional information" wrapText="true" />
+            <Button fx:id="next" layoutX="487.0" layoutY="741.0" mnemonicParsing="false" text="Next" onAction="#nextpage" />
+            <Button fx:id="back" layoutX="52.0" layoutY="744.0" mnemonicParsing="false" text="Back" onAction="#backtoHomepage"/>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

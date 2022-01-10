@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller = "Controller.Controller10">
+   <content>
+      <AnchorPane prefHeight="650.0" prefWidth="586.0" styleClass="colorBackground" stylesheets="@stylesheet.css">
+         <children>
+            <Label layoutX="115.0" layoutY="28.0" text="TERMS AND SERVICES">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="110.0" prefHeight="90.0" prefWidth="485.0" text="These terms and conditions govern your use of Vroom Vroom, by using this applicaton you accept these terms and conditions in full and without reservation. If you disagree with these terms and conditions or any part of these terms and conditions, you must not use this application. " wrapText="true" />
+            <Label layoutX="42.0" layoutY="209.0" prefHeight="90.0" prefWidth="485.0" text="Acceptable use: You must not use this application in any way that causes, or may cause, damage to the application or impairment of the availability or accessibility of this application or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity." wrapText="true" />
+            <Label layoutX="42.0" layoutY="319.0" prefHeight="156.0" prefWidth="485.0" text="Limitations of liability: This application will not be liable to you (whether under the law of contact, the law of torts or otherwise)to the extent that the application is provided free-of-charge, for any direct loss, or for any indirect, special or consequential loss; or for any business losses, loss of revenue, income, profits or anticipated savings, loss of contracts or business relationships, loss of reputation or goodwill, or loss or corruption of information or data.These limitations of liability apply even if This website has been expressly advised of the potential loss." wrapText="true" />
+            <Label layoutX="42.0" layoutY="483.0" prefHeight="81.0" prefWidth="485.0" text="Entire agreementThese terms and conditions, together with this Vroom Vroom's Privacy Policy constitute the entire agreement between you and Vroom Vroom in relation to your use of this application, and supersede all previous agreements in respect of your use of Vroom Vroom" wrapText="true" />
+            <Button fx:id="goback" layoutX="262.0" layoutY="591.0" mnemonicParsing="false" styleClass="button-raised" stylesheets="@stylesheet.css" text="Go back" onAction="#returntohome"/>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
